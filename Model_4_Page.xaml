@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AVENTURINECOIN_MAUIEDITION.Model_4_Page"
+             Title="抽取记录">
+    <VerticalStackLayout>
+        <ListView x:Name="LV_LogList" RowHeight="100" HeightRequest="500">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout HeightRequest="100">
+                            <Label x:Name="L_BingoName" FontSize="Large" Text="{Binding BingoName}"/>
+                            <Label x:Name="L_AllName" FontSize="Body" Text="{Binding AllName}"/>
+                            <Label x:Name="L_LotteryData" FontSize="Caption" Text="{Binding LotteryDate}" />
+                        </VerticalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="BUT_Clear" HorizontalOptions="Center" VerticalOptions="Center" Text="删除所有记录" WidthRequest="250" HeightRequest="50">
+            <Button.BackgroundColor>OrangeRed</Button.BackgroundColor>
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

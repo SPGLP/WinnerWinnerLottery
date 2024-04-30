@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AVENTURINECOIN_MAUIEDITION.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AVENTURINECOIN_MAUIEDITION"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="抽取单人" Icon="asset/model1p.png" >
+            <Shell.TabBarTitleColor>Green</Shell.TabBarTitleColor>
+            <ShellContent ContentTemplate="{DataTemplate local:Model_1_Page}" />
+        </Tab>
+        <Tab Title="抽取多人" Icon="asset/model2p.png">
+            <Shell.TabBarTitleColor>Green</Shell.TabBarTitleColor>
+            <ShellContent ContentTemplate="{DataTemplate local:Model_2_Page}" />
+        </Tab>
+        <Tab Title="名单设置" Icon="asset/model3p.png">
+            <Shell.TabBarTitleColor>Green</Shell.TabBarTitleColor>
+            <ShellContent ContentTemplate="{DataTemplate local:Model_3_Page}" />
+        </Tab>
+        <Tab Title="抽取记录" Icon="asset/model4p.png">
+            <Shell.TabBarTitleColor>Green</Shell.TabBarTitleColor>
+            <ShellContent ContentTemplate="{DataTemplate local:Model_4_Page}" />
+        </Tab>
+    </TabBar>
+    
+    <!--<ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainWindow}" Route="MainWindow" />-->
+
+</Shell>

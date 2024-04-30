@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AVENTURINECOIN_MAUIEDITION.Model_3_Page"
+             Title="Model_3_Page">
+    <VerticalStackLayout>
+        <VerticalStackLayout Padding="20">
+            <Label FontSize="Title">
+                名单
+            </Label>
+            <ListView x:Name="LV_NameList" HeightRequest="200" IsVisible="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+        <Frame Margin="0,50,0,0">
+            <VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Margin="0,10,0,0">
+                        名称：
+                    </Label>
+                    <Entry x:Name="ET_Name" WidthRequest="300"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Button x:Name="BUT_EditOrNew" Text="修改或添加" Margin="0,0,0,0">
+                        <Button.BackgroundColor>DeepSkyBlue</Button.BackgroundColor>
+                    </Button>
+                    <Button x:Name="BUT_Remove" Text="移除" Margin="10,0,0,0" >
+                        <Button.BackgroundColor>DeepSkyBlue</Button.BackgroundColor>
+                    </Button>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
+        <Button x:Name="BUT_Save" Text="保存并使用该名单" Margin="0,50,0,0" WidthRequest="250" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center">
+            <Button.BackgroundColor>DarkBlue</Button.BackgroundColor>
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

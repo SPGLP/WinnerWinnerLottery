@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AVENTURINECOIN_MAUIEDITION.Model_1_Page"
+             Title="抽取单人">
+    <VerticalStackLayout>
+        <Frame CornerRadius="50" HorizontalOptions="Start" Margin="30,50,0,0">
+            <Label x:Name="L_Time" HorizontalOptions="Center" Text="5"></Label>
+        </Frame>
+        <VerticalStackLayout VerticalOptions="Center" Margin="0,100,0,0">
+            <Label x:Name="L_Name" HorizontalOptions="Center" VerticalOptions="Center" FontSize="30" Margin="0,0,0,0">
+                大吉大利，今晚抽签
+            </Label>
+            <Button x:Name="BUT_Start" Text="开始" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Green" WidthRequest="250" HeightRequest="50" Margin="0,100,0,0" />
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
