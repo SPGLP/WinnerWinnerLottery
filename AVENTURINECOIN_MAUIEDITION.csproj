@@ -69,6 +69,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\AMClassLibraryForSave\AMClassLibraryForSave.csproj" />
+	  <ProjectReference Include="..\AMClassLibrary\AMClassLibrary.vbproj" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Model_1_Page.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
