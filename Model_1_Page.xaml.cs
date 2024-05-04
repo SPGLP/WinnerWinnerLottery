@@ -12,7 +12,7 @@ public partial class Model_1_Page : ContentPage
     public Model_1_Page()
     {
         InitializeComponent();
-        lotteryTimer = new LotteryTimer(nameListClass);
+        lotteryTimer = new LotteryTimer(ref nameListClass);
         //L_Name.BindingContext = lotteryTimer;
         //L_Time.BindingContext = lotteryTimer;
         //BUT_Start.BindingContext = lotteryTimer;

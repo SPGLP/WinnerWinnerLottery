@@ -1,3 +1,5 @@
+using AMClassLibrary;
+
 namespace AVENTURINECOIN_MAUIEDITION;
 
 public partial class Model_2_Page : ContentPage
