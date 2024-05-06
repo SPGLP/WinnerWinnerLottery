@@ -14,9 +14,6 @@ namespace AVENTURINECOIN_MAUIEDITION
     {
         public static LinkedList<string> nameList = new LinkedList<string>();
 
-
-
-
         //public static bool IsMultiLotteryFinish { get; set; } = true;
         //public static int totalPeople { get; set; } = 0;
         //public static int lotteryCount { get; set; } = 0;

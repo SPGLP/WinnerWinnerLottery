@@ -15,14 +15,14 @@
                 <ColumnDefinition Width="90" />
                 <ColumnDefinition Width="90" />
             </Grid.ColumnDefinitions>
-            <Label x:Name="L_Name1" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Large">大</Label>
-            <Label x:Name="L_Name2" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="Large">吉</Label>
-            <Label x:Name="L_Name3" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" FontSize="Large">大</Label>
-            <Label x:Name="L_Name4" Grid.Row="0" Grid.Column="3" HorizontalTextAlignment="Center" FontSize="Large">利</Label>
-            <Label x:Name="L_Name5" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Large">今</Label>
-            <Label x:Name="L_Name6" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="Large">晚</Label>
-            <Label x:Name="L_Name7" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" FontSize="Large">抽</Label>
-            <Label x:Name="L_Name8" Grid.Row="1" Grid.Column="3" HorizontalTextAlignment="Center" FontSize="Large">签</Label>
+            <Label x:Name="L_Name1" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Small">大</Label>
+            <Label x:Name="L_Name2" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="Small">吉</Label>
+            <Label x:Name="L_Name3" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" FontSize="Small">大</Label>
+            <Label x:Name="L_Name4" Grid.Row="0" Grid.Column="3" HorizontalTextAlignment="Center" FontSize="Small">利</Label>
+            <Label x:Name="L_Name5" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Small">今</Label>
+            <Label x:Name="L_Name6" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="Small">晚</Label>
+            <Label x:Name="L_Name7" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" FontSize="Small">抽</Label>
+            <Label x:Name="L_Name8" Grid.Row="1" Grid.Column="3" HorizontalTextAlignment="Center" FontSize="Small">签</Label>
         </Grid>
         <Frame HorizontalOptions="Center" VerticalOptions="Center">
             <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
@@ -32,6 +32,6 @@
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Frame>
-        <Button x:Name="BUT_Start" Text="开始" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Green" WidthRequest="250" HeightRequest="50" Margin="0,50,0,0" />
+        <Button x:Name="BUT_Start" Text="开始" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Green" WidthRequest="250" HeightRequest="50" Margin="0,50,0,0" Clicked="BUT_Start_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
