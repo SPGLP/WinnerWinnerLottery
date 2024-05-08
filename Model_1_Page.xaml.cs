@@ -1,7 +1,6 @@
 using AMClassLibrary;
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
-using System.Threading;
 
 namespace AVENTURINECOIN_MAUIEDITION;
 
@@ -9,12 +8,11 @@ public partial class Model_1_Page : ContentPage
 {
     NameList nameListClass;
     LotteryTimer lotteryTimer = null;
-    Timer timer;
 
     public Model_1_Page()
     {
         InitializeComponent();
-        LinkedList<String> nl = new LinkedList<string>(StaticOtherLogic.nameList);
+        LinkedList<string> nl = new LinkedList<string>(StaticOtherLogic.nameList);
         nameListClass = new NameList(nl);
         lotteryTimer = new LotteryTimer(ref nameListClass, LotteryFinishToast);
         //L_Name.BindingContext = lotteryTimer;
@@ -42,6 +40,10 @@ public partial class Model_1_Page : ContentPage
 
     private void LotteryFinishToast()
     {
-        Toast.Make($"抽签完成，恭喜 {L_Name.Text} 成为本次幸运儿", ToastDuration.Short).Show();
+        MainThread.BeginInvokeOnMainThread(() =>
+        {
+            var toast = Toast.Make($"抽签完成，恭喜 {L_Name.Text} 成为本次幸运儿", ToastDuration.Short);
+            toast.Show();
+        });
     }
 }

@@ -2,16 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AVENTURINECOIN_MAUIEDITION.Model_3_Page"
-             Title="Model_3_Page">
+             Title="名单设置">
     <VerticalStackLayout>
         <VerticalStackLayout Padding="20">
             <Label FontSize="Title">
                 名单
             </Label>
-            <ListView x:Name="LV_NameList" HeightRequest="200" IsVisible="True" >
+            <ListView x:Name="LV_NameList" HeightRequest="200" IsVisible="True" ItemSelected="LV_NameList_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Name}"/>
+                        <TextCell Text="{Binding Name}" Height="20"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
@@ -25,17 +25,21 @@
                     <Entry x:Name="ET_Name" WidthRequest="300"/>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                    <Button x:Name="BUT_EditOrNew" Text="修改或添加" Margin="0,0,0,0">
+                    <Button x:Name="BUT_New" Text="添加" Margin="0,0,0,0" Clicked="BUT_New_Clicked">
                         <Button.BackgroundColor>DeepSkyBlue</Button.BackgroundColor>
                     </Button>
-                    <Button x:Name="BUT_Remove" Text="移除" Margin="10,0,0,0" >
+                    <Button x:Name="BUT_Edit" Text="修改" Margin="10,0,0,0" Clicked="BUT_Edit_Clicked">
+                        <Button.BackgroundColor>DeepSkyBlue</Button.BackgroundColor>
+                    </Button>
+                    <Button x:Name="BUT_Remove" Text="移除" Margin="10,0,0,0" Clicked="BUT_Remove_Clicked">
                         <Button.BackgroundColor>DeepSkyBlue</Button.BackgroundColor>
                     </Button>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Frame>
-        <Button x:Name="BUT_Save" Text="保存并使用该名单" Margin="0,50,0,0" WidthRequest="250" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center">
+        <Button x:Name="BUT_Save" Text="保存并使用该名单" Margin="0,50,0,0" WidthRequest="250" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Clicked="BUT_Save_Clicked">
             <Button.BackgroundColor>DarkBlue</Button.BackgroundColor>
+            <Button.TextColor>White</Button.TextColor>
         </Button>
     </VerticalStackLayout>
 </ContentPage>

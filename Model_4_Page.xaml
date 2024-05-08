@@ -4,7 +4,8 @@
              x:Class="AVENTURINECOIN_MAUIEDITION.Model_4_Page"
              Title="抽取记录">
     <VerticalStackLayout>
-        <ListView x:Name="LV_LogList" RowHeight="100" HeightRequest="500">
+        <!--"<Button x:Name="BUT_Reflush" HorizontalOptions="End" VerticalOptions="Start" Text="刷新" Margin="0,10,20,0" Clicked="BUT_Reflush_Clicked"/>-->
+        <ListView x:Name="LV_LogList" RowHeight="100" HeightRequest="450" IsPullToRefreshEnabled="True" Refreshing="LV_LogList_Refreshing">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -17,7 +18,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="BUT_Clear" HorizontalOptions="Center" VerticalOptions="Center" Text="删除所有记录" WidthRequest="250" HeightRequest="50">
+        <Button x:Name="BUT_Clear" HorizontalOptions="Center" VerticalOptions="Center" Text="删除所有记录" WidthRequest="250" HeightRequest="50" Clicked="BUT_Clear_Clicked">
             <Button.BackgroundColor>OrangeRed</Button.BackgroundColor>
         </Button>
     </VerticalStackLayout>

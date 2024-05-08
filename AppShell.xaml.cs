@@ -9,7 +9,6 @@ public partial class AppShell : Shell
     public AppShell()
 	{
 		InitializeComponent();
-
         if (File.Exists(nameListPath))
         {
             InitNameList();
@@ -18,11 +17,10 @@ public partial class AppShell : Shell
         {
             using (var sw = new StreamWriter(nameListPath))
             {
-                sw.WriteLine("Roseliger Luo, Mofeng Huang, chaoix Huang, TangXiao Tang");
+                sw.WriteLine("Roseliger Luo,Mofeng Huang,chaoix Huang,TangXiao Tang");
+                sw.Close();
             }
         }
-        
-        
     }
 
     private void InitNameList()
@@ -36,5 +34,6 @@ public partial class AppShell : Shell
             nl.AddLast(items);
         }
         StaticOtherLogic.nameList = nl;
+        sr.Close();
     }
 }
