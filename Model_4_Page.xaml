@@ -5,7 +5,7 @@
              Title="抽取记录">
     <VerticalStackLayout>
         <!--"<Button x:Name="BUT_Reflush" HorizontalOptions="End" VerticalOptions="Start" Text="刷新" Margin="0,10,20,0" Clicked="BUT_Reflush_Clicked"/>-->
-        <ListView x:Name="LV_LogList" RowHeight="100" HeightRequest="450" IsPullToRefreshEnabled="True" Refreshing="LV_LogList_Refreshing">
+        <ListView x:Name="LV_LogList" RowHeight="100" HeightRequest="500" IsPullToRefreshEnabled="True" Refreshing="LV_LogList_Refreshing">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

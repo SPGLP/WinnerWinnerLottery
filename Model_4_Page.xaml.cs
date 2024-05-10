@@ -14,6 +14,7 @@ public partial class Model_4_Page : ContentPage
         LogItems = new ObservableCollection<LogItem>();
         ReadLogLogic();
         LV_LogList.ItemsSource = LogItems;
+
     }
 
     private void ReadLogLogic()
@@ -30,7 +31,7 @@ public partial class Model_4_Page : ContentPage
             }
             // sr.Close();
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             Toast.Make("读取失败，可能是由于记录为空", CommunityToolkit.Maui.Core.ToastDuration.Short).Show();
         }
@@ -64,10 +65,9 @@ public partial class Model_4_Page : ContentPage
             //    sw.Write("");
             //    sw.Close();
             //}
-            //LogItems.Clear();
+            LogItems.Clear();
             await Toast.Make("已删除所有记录", CommunityToolkit.Maui.Core.ToastDuration.Short).Show();
         }
-        LogItems.Clear();
     } 
 
     public class LogItem

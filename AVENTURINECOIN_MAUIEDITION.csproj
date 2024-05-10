@@ -12,14 +12,14 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>AVENTURINECOIN_MAUIEDITION</ApplicationTitle>
+		<ApplicationTitle>WinnerWinnerLottery</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.aventurinecoin_mauiedition</ApplicationId>
+		<ApplicationId>com.spglp.aventurinecoin_mauiedition</ApplicationId>
 		<ApplicationIdGuid>0b1928c3-67e0-43c8-80c1-12b89104dee0</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationDisplayVersion>0.7.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
@@ -33,10 +33,11 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<!--<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />-->
+    <MauiIcon Include="assets\appicon.svg" /> 
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="assets\splashscreen.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -55,6 +56,7 @@
 	  <None Remove="assets\model3p.png" />
 	  <None Remove="assets\model4p.png" />
 	  <None Remove="assets\model5p.png" />
+	  <None Remove="assets\splashscreen.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
