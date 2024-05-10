@@ -1,5 +1,5 @@
 # WinnerWinnnerLottery
-## Cross-platform Random Drawing Program based on .NET MAUI
+## Cross-platform Random Drawing App based on .NET MAUI
 
 
 [ [Chinese Simplified](README.md) | **English** ]
