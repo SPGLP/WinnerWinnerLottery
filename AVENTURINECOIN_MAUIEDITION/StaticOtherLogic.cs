@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AMClassLibrary;
-using AMClassLibraryForSave;
-using Microsoft.VisualBasic;
+﻿
 
 namespace AVENTURINECOIN_MAUIEDITION
 {
