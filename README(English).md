@@ -4,7 +4,7 @@
 
 [ [Chinese Simplified](README.md) | **English** ]
 
-> **Notice:** The English version uses AI for translation and may have some mistake.
+> **Notice:** The English document uses AI for translation and may have some mistake.
 
 ### Overview 🍗
 This product is a cross-platform random drawing program developed based on .NET MAUI technology architecture.

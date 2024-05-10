@@ -1,7 +1,7 @@
 # 大吉大利 今晚抽签
 ## 基于 .NET MAUI 的跨平台随机抽签程序
 
-
+[ **Chinese Simplified** | [English](README(English).md) ]
 
 ### 概述🍗
 本产品是一款基于 .NET MAUI 技术架构所开发的跨平台随机抽签程序。
